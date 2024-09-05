@@ -1,7 +1,7 @@
 ---
 difficulty: 1
 training: true
-chapter: "Chapter 5: Best Practices"
+chapter: 'Chapter 5: Best Practices'
 tags: vue
 ---
 
