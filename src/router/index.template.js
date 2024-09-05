@@ -1,6 +1,6 @@
 import { createWebHistory, createRouter } from "vue-router";
-import Home from "../views/index.vue";
-import PostShow from "../views/[id].template.vue";
+const Home = () => import("../views/index.vue");
+const PostShow = () => import("../views/[id].template.vue");
 
 const routes = [
   { path: "/", component: Home },

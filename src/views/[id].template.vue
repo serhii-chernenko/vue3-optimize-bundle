@@ -5,7 +5,9 @@ import { computed, ref, defineAsyncComponent } from "vue";
 import { useRoute } from "vue-router";
 import AppLoader from "@/components/AppLoader.vue";
 
-const PostComments = defineAsyncComponent(() => import('@/components/PostComments.vue'))
+const PostComments = defineAsyncComponent(
+  () => import("@/components/PostComments.vue"),
+);
 
 const route = useRoute();
 
