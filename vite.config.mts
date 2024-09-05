@@ -8,7 +8,7 @@ import bodyParser from 'body-parser'
 import mockServer from 'vite-plugin-mock-server'
 
 // https://vitejs.dev/config/
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
     plugins: [
         vue(),
         VueDevTools(),
@@ -37,4 +37,5 @@ export default defineConfig({
             '@': fileURLToPath(new URL('./src', import.meta.url)),
         },
     },
-})
+    base: mode === 'production' ? '/vue3-optimize-bundle/' : '/',
+}))
